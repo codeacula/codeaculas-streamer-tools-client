@@ -1,0 +1,55 @@
+@import './base.css';
+
+:root {
+  --codeacula-blue: rgb(10, 10, 80);
+  --codeacula-white: rgb(255, 253, 230);
+  --codeacula-gold: rgb(212, 175, 55);
+  --codeacula-silver: rgb(192, 192, 192);
+}
+
+html,
+body {
+  color: var(--codeacula-white);
+  font-family: 'Lora', serif;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
