@@ -1,0 +1,57 @@
+name: '🔒 Security Issue'
+description: 'Report a potential security vulnerability.'
+labels: ['security', 'needs-triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **Important: If you're not sure this is a security issue, please report it as a regular bug instead.**
+        **[Submit a Bug Report](https://github.com/codeacula/codeaculas-streamer-tools-client/issues/new?template=bug_report.yml)**
+
+        If this **is** a security issue, please proceed with this form.
+        **For sensitive security issues, do not open a public issue!** Instead, report it privately via:
+        - **Email:** [codeacula@codeacula.com](mailto:codeacula@codeacula.com)
+        - **Discord:** `@codeacula`
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 'Issue Description'
+      description: 'Provide a clear description of the potential security vulnerability.'
+      placeholder: 'Describe the issue, including any potential risks or exploits.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 'Why is this a security vulnerability?'
+      description: 'Explain why this behavior could be exploited or pose a risk.'
+      placeholder: "Example: 'This allows unauthorized access to user data because...'"
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 'Affected Version'
+      description: 'Which version of the project is impacted?'
+      placeholder: 'e.g., v1.2.3'
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 'Expected Behavior'
+      description: 'What should happen if the system were functioning securely?'
+      placeholder: 'Describe the expected secure behavior.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 'Additional Context'
+      description: 'Any logs, screenshots, or extra details that could help diagnose the issue.'
+      placeholder: 'Attach relevant files or logs here.'

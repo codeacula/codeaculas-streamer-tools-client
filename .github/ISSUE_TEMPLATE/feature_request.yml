@@ -1,0 +1,24 @@
+name: "✨ Feature Request"
+description: Suggest a new feature or improvement
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: "## ✨ Feature Request\nHave an idea for a new feature? Let us know!\n\n💡 **Before you submit:**\nCheck [GitHub Discussions](../../discussions) to see if this idea has been discussed before."
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Describe the feature in detail."
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What problem does this solve?"
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed Solution"
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Additional Context"

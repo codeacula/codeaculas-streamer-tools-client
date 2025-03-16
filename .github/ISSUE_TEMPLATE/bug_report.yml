@@ -1,0 +1,42 @@
+name: "🐛 Bug Report"
+description: Report an issue with the project
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "## 🐛 Bug Report\nThanks for taking the time to report a bug!\n\n🚨 **Before you submit:**\nPlease check [GitHub Discussions](../../discussions) to see if this issue has already been reported."
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Describe the issue in detail."
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Describe how to reproduce the issue."
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior"
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual Behavior"
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Relevant Logs"
+      render: shell
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Environment"
+      options:
+        - Local Development
+        - Self-Hosted
+        - Production
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Additional Context"

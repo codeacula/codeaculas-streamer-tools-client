@@ -1,0 +1,24 @@
+name: "🛠 Refactoring / Tech Debt"
+description: Propose a code improvement or cleanup
+labels: [refactor]
+body:
+  - type: markdown
+    attributes:
+      value: "## 🛠 Refactoring / Tech Debt\nSuggest improvements for better code quality.\n\n📝 **Note:** If this is about a new feature, please submit a [Feature Request](../../issues/new?template=feature_request.yml) instead."
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What’s the issue?"
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed Refactor"
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Provide a detailed description of the refactor or tech debt."
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Additional Context"
